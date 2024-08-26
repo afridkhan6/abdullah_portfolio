@@ -1,0 +1,167 @@
+body {
+    font-family: "Gideon Roman", serif;
+    font-weight: 400;
+    font-style: normal;
+    /* overflow-y: hidden; */
+}
+
+.navbar {
+    padding: 13px 8px;
+}
+
+#nav-ul {
+    padding: 0 200px !important;
+}
+
+.nav-item {
+    margin-right: 20px;
+    padding-right: 10px;
+}
+.container{
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.custom_navbar{
+    background-color: #1C1E1F;
+}
+
+/* Normal hover effect */
+#profile:hover,
+#skills:hover,
+#qualification:hover,
+#projects:hover {
+    color: #00C483 !important;
+    cursor: pointer;
+}
+
+/* Frozen hover effect */
+button.hover-frozen i {
+    color: #00C483 !important;
+}
+
+/* s-2 */
+.green-square {
+    height: 70px;
+    width: 70px;
+    background: #00C483;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    padding: 10px;
+    background: #000000;
+    border-radius: 50%;
+}
+
+#info {
+    padding-top: 40px;
+    text-align: center;
+    justify-content: center;
+    background-color: #1C1E1F;
+    gap: 15px;
+}
+#info button{
+    margin: 8px 0 8px 0;
+}
+button {
+    background-color: #1C1E1F;
+    border: none;
+}
+
+/* image */
+
+.main-img {
+    position: relative;
+}
+
+.image {
+    height: 400px !important;
+    width: 260px !important;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: -25px;
+    z-index: 5;
+}
+
+.image img {
+    /* display: none; */
+    position: absolute;
+    object-fit: cover;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}
+
+.bio {
+    position: absolute;
+    bottom: 37px;
+    right: 12px;
+    z-index: 10;
+    color: white;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style:normal;
+}
+
+/* Define the animation for sliding up */
+/* Container for animated content */
+/* Define the animation for sliding up and down with background effect */
+/* Container for animated content */
+.content-container {
+    position: relative;
+    overflow: hidden; /* Hide overflowing content during animation */
+}
+
+/* Background Slide-Up Effect */
+@keyframes slideUpBackground {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+        background-color: #1C1E1F; /* Initial background color */
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        background-color: #282C34; /* New background color when sliding up */
+    }
+}
+
+/* Background Slide-Down Effect */
+@keyframes slideDownBackground {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+        background-color: #282C34; /* New background color when sliding down */
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+        background-color: #1C1E1F; /* Final background color */
+    }
+}
+
+/* Class to apply the background slide-up animation */
+.slide-up-background {
+    animation: slideUpBackground 0.7s ease-out forwards;
+}
+
+/* Class to apply the background slide-down animation */
+.slide-down-background {
+    animation: slideDownBackground 0.7s ease-out forwards;
+}
+
+/* Hide elements initially */
+.hide {
+    display: none;
+}
+
+
+/* Hide elements initially */
+.hide {
+    display: none;
+}
